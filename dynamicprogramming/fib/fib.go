@@ -1,4 +1,4 @@
-package dynamicprogramming
+package fib
 
 func Fibbonacci(n int) int {
 	if n <= 2 {

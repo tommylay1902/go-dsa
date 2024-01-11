@@ -1,4 +1,4 @@
-package canSum
+package cansum
 
 func CanSum(target int, numbers []int) bool {
 	return helper(target, numbers, make(map[int]bool))

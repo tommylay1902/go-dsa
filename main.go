@@ -20,11 +20,11 @@ func main() {
 
 	// tree.PrintInOrderTraversal(tree.Root)
 
-	// fmt.Println("fib result of 10:", dynamicprogramming.Fibbonacci(100))
+	// fmt.Println("fib result of 10:", fib.Fibbonacci(100))
 
-	// fmt.Println("fib result of 10:", dynamicprogramming.FibbonacciMemo(100))
+	// fmt.Println("fib result of 10:", fib.FibbonacciMemo(100))
 
-	// fmt.Println(canSum.CanSum(300, []int{7, 14}))
+	// fmt.Println(cansum.CanSum(300, []int{7, 14}))
 
 	// fmt.Println(howsum.HowSum(300, []int{7, 14}, make(map[int][]int)))
 
