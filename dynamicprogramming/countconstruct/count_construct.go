@@ -11,9 +11,7 @@ func CountConstructBrute(word string, wordbank []string) int {
 		if strings.HasPrefix(word, value) {
 			trimWord := strings.TrimPrefix(word, value)
 			resultingRemainder := CountConstructBrute(trimWord, wordbank)
-			if resultingRemainder == 1 {
-				sum += resultingRemainder
-			}
+			sum += resultingRemainder
 		}
 	}
 	return sum
@@ -35,10 +33,8 @@ func helper(word string, wordbank []string, memo map[string]int) int {
 		if strings.HasPrefix(word, value) {
 			trimWord := strings.TrimPrefix(word, value)
 			resultingRemainder := helper(trimWord, wordbank, memo)
-			if resultingRemainder == 1 {
-				memo[word] = sum + resultingRemainder
-				sum = sum + resultingRemainder
-			}
+			memo[word] += resultingRemainder
+			sum += resultingRemainder
 		}
 	}
 

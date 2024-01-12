@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/tommylay1902/go-dsa/dynamicprogramming/allconstruct"
+	"github.com/tommylay1902/go-dsa/dynamicprogramming/countconstruct"
 )
 
 func main() {
@@ -33,11 +33,11 @@ func main() {
 	// fmt.Println(canconstruct.CanConstructBrute("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", []string{"ab", "a", "b", "c", "de", "a", "a", "a", "e", "ee", "eeeeeee", "eeeeeeeeeeeeeee", "eeeeee", "eeeeeee", "eee", "eeee", "eeeeeeeeeeee"}))
 
 	// fmt.Println(countconstruct.CountConstructBrute("a", []string{"ab", "a", "b", "c", "de"}))
+	fmt.Println(countconstruct.CountConstructBrute("aaaaaaaaaaaaaaz", []string{"a", "aa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaaaaa", "z"}))
+	fmt.Println(countconstruct.CountConstruct("aaaaaaaaaaaaaaz", []string{"a", "aa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaaaaa", "z"}))
 
-	// fmt.Println(countconstruct.CountConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", []string{"ab", "a", "b", "c", "de", "a", "a", "a", "e", "ee", "eeeeeee", "eeeeeeeeeeeeeee", "eeeeee", "eeeeeee", "eee", "eeee", "eeeeeeeeeeee", "f"}))
+	// fmt.Println(allconstruct.AllConstructBrute("aaaaaaaaaaaaaaz", []string{"a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaaaaa", "z"}))
 
-	fmt.Println(allconstruct.AllConstructBrute("aaaaaaaaaaaaaaz", []string{"a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaaaaa", "z"}))
-
-	fmt.Println(allconstruct.AllConstruct("aaaaaaaaaaaaaaz", []string{"a", "aa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaaaaa"}))
+	// fmt.Println(allconstruct.AllConstruct("aaaaaaaaaaaaaaz", []string{"a", "aa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaaaaa"}))
 
 }
