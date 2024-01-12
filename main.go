@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/tommylay1902/go-dsa/dynamicprogramming/canconstruct"
+	"github.com/tommylay1902/go-dsa/dynamicprogramming/countconstruct"
 )
 
 func main() {
@@ -29,7 +29,10 @@ func main() {
 	// fmt.Println(howsum.HowSum(300, []int{7, 14}, make(map[int][]int)))
 
 	// fmt.Println(bestsum.BestSum(300, []int{7, 14}))
+	// fmt.Println(canconstruct.CanConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", []string{"ab", "a", "b", "c", "de", "a", "a", "a", "e", "ee", "eeeeeee", "eeeeeeeeeeeeeee", "eeeeee", "eeeeeee"}))
+	// fmt.Println(canconstruct.CanConstructBrute("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", []string{"ab", "a", "b", "c", "de", "a", "a", "a", "e", "ee", "eeeeeee", "eeeeeeeeeeeeeee", "eeeeee", "eeeeeee", "eee", "eeee", "eeeeeeeeeeee"}))
 
-	fmt.Println(canconstruct.CanConstructBrute("abcdef", []string{"ab", "a", "b", "c", "de"}))
+	fmt.Println(countconstruct.CountConstructBrute("a", []string{"ab", "a", "b", "c", "de"}))
 
+	// fmt.Println(countconstruct.CountConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", []string{"ab", "a", "b", "c", "de", "a", "a", "a", "e", "ee", "eeeeeee", "eeeeeeeeeeeeeee", "eeeeee", "eeeeeee", "eee", "eeee", "eeeeeeeeeeee", "f"}))
 }
